@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Café</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family:Roboto,sans-serif;
+            background:#FFF8F0;
+        }
+
+        h1,h2,h3,h4{
+            font-family:Poppins,sans-serif;
+        }
+
+        .navbar{
+            background:#6F4E37;
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color:white !important;
+        }
+
+        .hero{
+            height:90vh;
+            background:url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80") center center/cover;
+            position:relative;
+        }
+
+        .overlay{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,.55);
+        }
+
+        .hero-content{
+            position:relative;
+            z-index:2;
+            color:white;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .btn-coffee{
+            background:#8B5E3C;
+            color:white;
+            border:none;
+        }
+
+        .btn-coffee:hover{
+            background:#6F4E37;
+            color:white;
+        }
+
+        .menu-card{
+            transition:.3s;
+        }
+
+        .menu-card:hover{
+            transform:translateY(-8px);
+        }
+
+        footer{
+            background:#6F4E37;
+            color:white;
+            padding:25px;
+        }
+
+        .about{
+            background:white;
+        }
+
+        .testimonial{
+            background:#fff;
+            border-radius:10px;
+            padding:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+☕ Brew Haven
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Menu</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Reservation</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1 class="display-3 fw-bold">
+Fresh Coffee.<br>
+Great Moments.
+</h1>
+
+<p class="lead mt-3">
+Premium Coffee • Fresh Snacks • Cozy Atmosphere
+</p>
+
+<div class="mt-4">
+
+<a href="#" class="btn btn-coffee btn-lg me-3">
+Order Now
+</a>
+
+<a href="#" class="btn btn-light btn-lg">
+Book a Table
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Featured Menu -->
+
+<section class="container py-5">
+
+<h2 class="text-center mb-5">
+Our Popular Menu
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card menu-card">
+
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Espresso</h5>
+
+<p>₹120</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card menu-card">
+
+<img src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Cappuccino</h5>
+
+<p>₹180</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card menu-card">
+
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Latte</h5>
+
+<p>₹200</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card menu-card">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Cold Coffee</h5>
+
+<p>₹220</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80"
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-md-6">
+
+<h2>About Brew Haven</h2>
+
+<p class="mt-3">
+
+Brew Haven Café serves freshly brewed coffee made from premium beans.
+We create a warm and relaxing environment where friends, families,
+and professionals can enjoy delicious coffee and snacks.
+
+</p>
+
+<a href="#" class="btn btn-coffee">
+Learn More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="container py-5">
+
+<h2 class="text-center mb-5">
+Customer Reviews
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p class="mt-3">
+Best coffee shop in town. Friendly staff and amazing coffee.
+</p>
+
+<h6>- Rahul</h6>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p class="mt-3">
+Beautiful ambience and delicious desserts.
+</p>
+
+<h6>- Priya</h6>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p class="mt-3">
+Perfect place for work and meetings.
+</p>
+
+<h6>- Arjun</h6>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="container text-center">
+
+<h4>Brew Haven Café</h4>
+
+<p>
+Fresh Coffee | Fresh Moments
+</p>
+
+<p>
+© 2026 Brew Haven Café. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
