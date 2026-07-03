@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://brew-haven-caf-ten.vercel.app/sitemap.xml
